@@ -1,0 +1,57 @@
+Basic Linux Commands
+
+1. pwd - print working directory
+
+2. The cd (Change Directory) command 
+-the primary tool for navigating the Linux filesystem using either absolute paths (starting from the root /) or relative paths (starting from your current location). 
+It features essential shortcuts like .. to move up one level, ~ to return to your home directory, and - to toggle back to your previous location.
+
+3. ls
+-The ls command acts as your "eyes" in the terminal, allowing you to view the contents of your current or specified directories. 
+By using flags like -a to reveal hidden files, -l for detailed file metadata, -r for reverse sorting, l [absolute path], and -al or -la for long hiddenn files, 
+you can customize the output to see exactly what is stored on your system.
+
+---------------------------------------------------------------------------------------------------------------------------
+TOUCH COMMAND
+touch <file>	                             - Create a new empty file or update an existing file's timestamp to now.
+touch <f1> <f2> <f3>	                     - Create multiple empty files at once.
+touch -r <ref> <file>	                     -Copy the timestamp from a reference file to another file.
+touch -d "<string>" <file>	               -Set a file to a specific date/time (e.g., "2025-10-21" or "next Friday").
+touch -a <file>	                           -Change only the access time.
+touch -m <file>	                           -Change only the modification time.
+touch -c <file>	                           -Update timestamps only if the file already exists (prevents creation).
+----------------------------------------------------------------------------------------------------------------------------
+FILE COMMAND
+file <filename>	                           Identify the file type of a specific file.
+file *	                                   Identify the file types of every file in the current directory.
+file -i <filename>	                       Show the MIME type (e.g., text/plain or image/jpeg).
+file -f <list.txt>	                       Read a list of filenames from a text file and identify them all.
+file -z <compressed_file>	                 Look inside a compressed file (like a .gz) to identify the contents.
+file -L <symlink>	                         Follow a symbolic link to identify the original file it points to.
+-------------------------------------------------------------------------------------------------------------------------------
+CAT COMMAND
+Command	Use Case
+cat <file>	                               Display the entire contents of a file in the terminal.
+cat <file1> <file2>	                       Concatenate (join) and display the contents of multiple files in order.
+cat > <file>	                             Create a new file and write text to it (Press Ctrl+D to save).
+cat -n <file>	                             Display file contents with all lines numbered.
+cat -b <file>	                             Display file contents numbering only the non-empty lines.
+------------------------------------------------------------------------------------------------------------------------------
+LESS COMMAND
+less <file>	                               Open a file in the pager for easy navigation.
+Arrow Keys	                               Move up or down line by line.
+Page Up/Down	                             Move through the file one screen at a time.
+g	                                         Jump to the very beginning of the file.
+G	                                         Jump to the very end of the file.
+/<term>	                                   Search forward for a specific word or phrase.
+?<term>	                                   Search backward for a specific word or phrase.
+n	                                         Move to the next search result.
+N	                                         Move to the previous search result.
+h	                                         Open the internal help menu for a list of all controls.
+q	                                         Quit less and return to the terminal prompt.
+------------------------------------------------------------------------------------------------------------------------------
+HISTORY
+history	                                   List all previously entered commands with their index numbers.
+history -d <offset>	                       Delete a specific command from history (e.g., history -d 101).
+history -c	                               Clear the history list for the current session.
+history -w	                               Write current session history to the history file (~/.bash_history).
