@@ -1,0 +1,26 @@
+While "Linux" is often used to describe the entire OS, it technically refers only to the Kernel. A complete operating system is called a Linux Distribution (or "Distro").
+
+A Linux system is divided into three main parts:
+-Hardware - This includes the physical components of your computer, such as the CPU, memory, and storage devices.
+-Linux Kernel - As the core of the operating system, the kernel manages the hardware and facilitates communication between software and hardware.
+-User Space - This is the environment where you, the user, interact with the system through applications and command-line interfaces.
+
+-----------------------------------------------------
+Common Linux Distros
+1. Debian
+- Debian is a community-driven, open-source operating system renowned for its "rock-solid" stability and its role as the foundation for many other Linux 
+distributions like Ubuntu. It offers three distinct branches—Stable, Testing, and Unstable—allowing users to choose between a highly secure, fixed environment 
+or a continuous rolling-release model for newer software.
+- .deb package format with APT package manager
+
+2. Red Hat Enterprise Linux
+-Red Hat Enterprise Linux (RHEL) is a subscription-based, commercial distribution designed for mission-critical corporate environments, offering long-term stability and professional support. 
+-It utilizes the RPM package format with the DNF/YUM managers and draws its innovations from the community-driven Fedora project to provide a secure foundation for large-scale infrastructure.
+
+3.Ubuntu
+Ubuntu is a user-friendly, Debian-based distribution developed by Canonical that serves as a popular entry point for beginners and professionals alike. 
+It features the polished GNOME desktop environment and utilizes the APT package management system, providing a stable and versatile experience across desktops, laptops, and servers.
+
+4. Linux Mint
+Linux Mint is an elegant, Ubuntu-based distribution designed to provide a comfortable "out-of-the-box" experience for desktop and laptop users. 
+It utilizes the stable Debian-style APT package system and features the intuitive Cinnamon interface, making it one of the most accessible choices for those transitioning from other operating systems.
