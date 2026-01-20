@@ -55,3 +55,16 @@ history	                                   List all previously entered commands 
 history -d <offset>	                       Delete a specific command from history (e.g., history -d 101).
 history -c	                               Clear the history list for the current session.
 history -w	                               Write current session history to the history file (~/.bash_history).
+-------------------------------------------------------------------------------------------------------
+CP (COPY)
+cp [SOURCE] [DESTINATION]                   Standard tool for copying files and directories.
+cp mycoolfile /home/pete/Documents/cooldocs  Specify the source file and the destination directory or path.
+cp mycoolfile .../mycoolfile_backup          Copy a file and give it a new name in the destination.
+* Matches any sequence of characters.
+?                                           Matches any single character.
+[]                                          Matches any one of the characters enclosed in the brackets.
+cp *.jpg /home/pete/Pictures                Copy all JPEG images from current location to Pictures.
+cp -r Pumpkin/ /home/pete/Documents          Copy a directory and all of its contents recursively.
+cp -i mycoolfile /home/pete/Pictures        Prompt for confirmation before overwriting (interactive).
+cp -f mycoolfile /home/pete/Pictures        Force an overwrite without any prompts.
+cp -p mycoolfile /home/pete/backups/        Preserve original attributes (mode, ownership, and timestamps).
